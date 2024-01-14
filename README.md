@@ -12,9 +12,11 @@ Compile:
 ```
 make
 ```
-If you want to access **yacbrafi** on your entire system, copy it to `/usr/bin`:
+If you want to access **yacbrafi** on your entire system, copy it to `/usr/bin` and the help file to `usr/share/yacbrafi`:
 ```
 sudo scp yacbrafi /usr/bin
+sudo mkdir /usr/share/yacbrafi
+sudo scp yacbrafi.help /usr/share/yacbrafi
 ```
 
 # Usage
@@ -56,4 +58,10 @@ yacbrafi "++[>++[>++<-]<-]"
 ... or by **giving the file path** as a command line argument after the parameter `-f`:
 ```
 yacbrafi -f /path/to/programm.bf
+```
+
+## Help
+Running **yacbrafi** without command line parameters will show a help file:
+```
+yacbrafi
 ```
