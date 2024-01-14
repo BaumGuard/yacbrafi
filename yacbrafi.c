@@ -29,7 +29,13 @@ struct args {
 struct args a;
 
 
+void show_help() {
+    FILE * help_file;
+    help_file = fopen("yacbrafi.help", "r");
 
+    while(!feof(help_file))
+        printf("%c", fgetc(help_file));
+}
 
 
 // Check if the given program is correct (Equal number of [ and ])
@@ -193,6 +199,8 @@ int main (int argc, char** argv) {
     char* input;
 
     int file_index;
+
+    if (argc == 0) show_help();
 
     // Parsing the command line arguments
     for (int i=1; i<argc; i++) {
