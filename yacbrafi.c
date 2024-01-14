@@ -200,7 +200,7 @@ int main (int argc, char** argv) {
 
     int file_index;
 
-    if (argc == 0) {
+    if (argc == 1) {
         show_help();
         return 0;
     }
