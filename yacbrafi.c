@@ -200,7 +200,10 @@ int main (int argc, char** argv) {
 
     int file_index;
 
-    if (argc == 0) show_help();
+    if (argc == 0) {
+        show_help();
+        return 0;
+    }
 
     // Parsing the command line arguments
     for (int i=1; i<argc; i++) {
