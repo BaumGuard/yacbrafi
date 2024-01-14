@@ -1,0 +1,14 @@
+yacbrafi
+
+
+Syntax:
+	yacbrafi [-f <file path> | <programm code>] [-c] [-pt] [-pap]
+
+Options:
+	-f <file path>		Load program file
+	-c					Output ASCII characters instead of integers
+	-pt					Print trace of execution
+	-pap				Print program and highlight the currently executed command
+
+	
+The order of the parameters doesn't matter!
